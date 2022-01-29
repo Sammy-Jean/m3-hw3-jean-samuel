@@ -1,26 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="">
-    <title></title>
-    <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bob's Burgers</title>
+    <meta name="description" content="" />
   </head>
   <body>
-    <ul>
-      <li>Home</li>
-      <li>Menu</li>
-      <li>About Us</li>
-      <li>Order Now</li>
-    </ul>
-    <h1>Bob's Burgers</h1>
-    <button>Order Now</button>
-    <h2>World's Best Burgers</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-    <button>View Menu</button>
-    <h2>Dine-in or Take-out</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-    <button>Contact Us</button>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom mr-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav p-3">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>Order Now</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="mt-1">
+            <img
+              src="img/logo.png"
+              title="bob's burgers "
+              alt="bobs burgers "
+            />
+          </div>
+          <div>
+            <button type="button" class="btn btn-warning">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container-fluid mt-5">
+        <div class="row p-2">
+          <div class="col-6">
+            <h2 class="mt-5">World's Best <span>Burgers</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa.
+              <br /><button type="button" class="btn btn-warning mt-2">
+                Order Now
+              </button>
+            </p>
+          </div>
+          <div class="col-6 mt-5 ml-3">
+            <img
+              class="float-end col-6 ml-4 p-3 small"
+              src="img/bobs-burger.png"
+              title="Bob's Burgers"
+              alt="Bob's Burgers"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="gray container-fluid mt-5">
+        <div class="row p-2">
+          <div class="col-6">
+            <img
+              class="float-start mr-4 p-3 col-6 small mr-3"
+              src="img/bob-headshot.png"
+              title="Bob from Burgers"
+              alt="Bob"
+            />
+          </div>
+
+          <div class="col-6 mt-5">
+            <h2>Dine-in or <span>Take-out</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa.
+              <br /><button type="button" class="btn btn-warning mt-2">
+                Contact Us
+              </button>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="yellow"></div>
+      <div class="black text-center">
+        <img
+          src="img/logo.png"
+          class="mt-2"
+          alt="bob's burgers"
+          title="bobs burgers"
+        />
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
